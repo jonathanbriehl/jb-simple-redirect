@@ -3,7 +3,7 @@
  * Plugin Name: Simple Domain Redirect
  * Plugin URI: http://www.jonathanbriehl.com
  * Description: Redirects to the domain of the home url if the site loads with a different domain
- * Version: 1.0.1
+ * Version: 1.1.1
  * Author: Jonathan Briehl
  * Author URI: http://www.jonathanbriehl.com
  * License: GPL2
@@ -29,7 +29,7 @@
 if (!function_exists('jb_simple_domain_redirect')) {
     function jb_simple_domain_redirect()
     {
-        ($_SERVER['HTTPS']) ? $http = "https://" : $http = "http://";
+        (isset( $_SERVER["HTTPS"] ) && strtolower( $_SERVER["HTTPS"] ) == "on" ) ? $http = "https://" : $http = "http://";
 
         $wordpress_url = get_site_url();
         // $http_array = array("http://", "https://");

@@ -2,8 +2,8 @@
 Contributors: Jonathan Briehl
 Tags: domain, redirect, url
 Requires at least: 4.1
-Tested up to: 5.3
-Stable tag: 1.0.1
+Tested up to: 6.1.1
+Stable tag: 1.1.1
 
 Redirects to the domain of the home url if the site loads with a different domain
 
@@ -40,6 +40,9 @@ Deactive the plugin. Clear your cache. Then refresh your site. Your pages should
 
 
 == Changelog ==
+
+= 1.1.1 =
+* Bug Fix
 
 = 1.0.1 =
 * The First Release
